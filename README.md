@@ -1,2 +1,2 @@
-# RxSwiftOperators
-The example of RxSwift Operators
+# RxSwiftStudy
+The code for RxSwift study
