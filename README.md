@@ -1,2 +1,2 @@
-# RxSwiftOperatorsExample
+# RxSwiftOperators
 The example of RxSwift Operators
