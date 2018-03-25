@@ -36,9 +36,9 @@
 		641B116D205E6A3000684CA9 /* Observable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		641B1170205E6A6500684CA9 /* Transform.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Transform.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64445839205E6B33005B3991 /* Arithmetic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arithmetic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		64EED2652064B0E7006460D0 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; };
+		64EED2652064B0E7006460D0 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64EED2662064B10B006460D0 /* Scheduler.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scheduler.playground; sourceTree = "<group>"; };
-		64EED2672064B124006460D0 /* Observer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observer.playground; sourceTree = "<group>"; };
+		64EED2672064B124006460D0 /* Observer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C3C47BE41C0A8E1E9828C1BE /* Pods_RxSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBD99ED18071B174B6139CC /* Pods-RxSwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
