@@ -12,7 +12,8 @@ let disposeBag = DisposeBag()
 let first = PublishSubject<String>()
 let second = PublishSubject<String>()
 
-Observable.combineLatest(first, second) { $0 + $1 }.subscribe(onNext: {
+Observable.combineLatest(first, second) { $0 + $1 }
+    .subscribe(onNext: {
     print($0)
 }).disposed(by: disposeBag)
 
