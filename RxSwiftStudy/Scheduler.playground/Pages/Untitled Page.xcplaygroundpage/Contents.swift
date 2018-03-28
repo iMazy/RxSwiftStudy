@@ -24,6 +24,8 @@ rxData.subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated)).observ
 /// 使用 subscribeOn 来决定数据序列的构建函数在哪个 Scheduler 上运行
 /// 上例中, 获取 Data 需要花费时间, 所以用 subscribeOn 切换到后台 Schedulers 来获取 Data. 避免主线程被阻塞
 
+
+
 //: - 使用 observeOn
 /// 使用 observeOn 来决定在哪个 Scheduler 监听这个序列.
 
