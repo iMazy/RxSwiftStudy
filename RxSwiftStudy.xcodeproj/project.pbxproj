@@ -25,7 +25,6 @@
 		641B1149205E635D00684CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		641B114B205E635D00684CA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		641B1152205E660800684CA9 /* Create.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Create.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		641B115F205E68A200684CA9 /* String.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = String.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		641B1160205E68AC00684CA9 /* Connection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Connection.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		641B1166205E699E00684CA9 /* Assisted.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Assisted.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		641B1167205E69BF00684CA9 /* Combine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Combine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -82,7 +81,6 @@
 				64EED2652064B0E7006460D0 /* Subject.playground */,
 				64EED2662064B10B006460D0 /* Scheduler.playground */,
 				64BB02312068C72400664F41 /* Variable.playground */,
-				641B115F205E68A200684CA9 /* String.playground */,
 				641B1160205E68AC00684CA9 /* Connection.playground */,
 				64445839205E6B33005B3991 /* Arithmetic.playground */,
 				641B1168205E69C800684CA9 /* Condition&Bool.playground */,
