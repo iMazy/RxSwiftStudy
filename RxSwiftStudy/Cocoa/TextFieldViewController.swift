@@ -51,13 +51,6 @@ class TextFieldViewController: BaseViewController {
         // - editingDidEnd：结束编辑
         // - editingDidEndOnExit：按下 return 键结束编辑
         // - allEditingEvents：包含前面的所有编辑相关事件
-        
-        /// UITextView 独有的方法
-        //（1）UITextView 还封装了如下几个委托回调方法：
-        // - didBeginEditing：开始编辑
-        // - didEndEditing：结束编辑
-        // - didChange：编辑内容发生改变
-        // - didChangeSelection：选中部分发生变化
 
         
         inputField1.rx.controlEvent([.editingDidBegin]).asObservable().subscribe(onNext: {
@@ -131,4 +124,35 @@ class TextFieldViewController: BaseViewController {
             print("你输入的是1: \($0)")
         }).disposed(by: disposeBag)
     }
+    
+    /// UITextView 独有的方法
+    //（1）UITextView 还封装了如下几个委托回调方法：
+    // - didBeginEditing：开始编辑
+    // - didEndEditing：结束编辑
+    // - didChange：编辑内容发生改变
+    // - didChangeSelection：选中部分发生变化
+    func textViewEditingAction() {
+        let textView = UITextView()
+        textView.rx.didBeginEditing.subscribe(onNext: {
+            print("开始编辑")
+        }).disposed(by: disposeBag)
+        
+        textView.rx.didEndEditing.subscribe(onNext: {
+            print("结束编辑")
+        }).disposed(by: disposeBag)
+        
+        textView.rx.didChange.subscribe(onNext: {
+            print("内容发生改变")
+        }).disposed(by: disposeBag)
+        
+        textView.rx.didChangeSelection.subscribe(onNext: {
+            print("选中部分发生改变")
+        }).disposed(by: disposeBag)
+    }
 }
+
+
+
+
+
+

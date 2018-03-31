@@ -17,6 +17,7 @@
 		64BDC9E7206F2CAF00B28BF1 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E6206F2CAF00B28BF1 /* LabelViewController.swift */; };
 		64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */; };
 		64BDC9EB206F6C0300B28BF1 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9EA206F6C0300B28BF1 /* TextFieldViewController.swift */; };
+		64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9EC206FB8A300B28BF1 /* ButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		64BDC9E6206F2CAF00B28BF1 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		64BDC9EA206F6C0300B28BF1 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		64BDC9EC206FB8A300B28BF1 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		64EED2652064B0E7006460D0 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64EED2662064B10B006460D0 /* Scheduler.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scheduler.playground; sourceTree = "<group>"; };
 		64EED2672064B124006460D0 /* Observer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -116,6 +118,7 @@
 				6445952A206F264000C440F4 /* CharacterObservableVC.swift */,
 				64BDC9E6206F2CAF00B28BF1 /* LabelViewController.swift */,
 				64BDC9EA206F6C0300B28BF1 /* TextFieldViewController.swift */,
+				64BDC9EC206FB8A300B28BF1 /* ButtonViewController.swift */,
 			);
 			path = Cocoa;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */,
+				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
 				641B1142205E635D00684CA9 /* ViewController.swift in Sources */,
 				64BDC9EB206F6C0300B28BF1 /* TextFieldViewController.swift in Sources */,
 				641B1140205E635D00684CA9 /* AppDelegate.swift in Sources */,
