@@ -158,4 +158,25 @@ timerID.subscribe(onNext: { (num) in
 })
 
 
+///////////////////////////////////////////////////////////////////////////////
+/// Generate
+/// 该方法创建一个只有当提供的所有的判断条件都为 true 的时候，才会给出动作的 Observable 序列
+let generateID = Observable<Int>.generate(initialState: 0,
+                                          condition: { $0 <= 10},
+                                          iterate: { $0 + 2 })
+
+
+//let generateID = Observable<Int>.generate(initialState: 0, condition: { (num) -> Bool in
+//    return num <= 10
+//}) { (num) -> Int in
+//    num + 2
+//}
+
+/// 等价于:
+// 使用of()方法
+let generateIDs = Observable.of(0 , 2 ,4 ,6 ,8 ,10)
+
+generateID.subscribe(onNext: { (num) in
+    print(num)
+})
 
