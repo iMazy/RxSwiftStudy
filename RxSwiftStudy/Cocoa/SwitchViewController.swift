@@ -18,9 +18,33 @@ class SwitchViewController: BaseViewController {
     
     @IBOutlet weak var activityView: UIActivityIndicatorView!
     
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        slider.rx.value.subscribe(onNext: {
+            print("当前slider值为: \($0)")
+        }).disposed(by: disposeBag)
+        
+        
+        stepper.rx.value.subscribe(onNext: {
+            print("当前stepper值为: \($0)")
+        }).disposed(by: disposeBag)
+        
+        /// slider 与 stepper 绑定
+        // slider -> stepper
+        slider.rx.value.map{ Double($0) }.bind(to: stepper.rx.value).disposed(by: disposeBag)
+        
+        // stepper -> slider
+        stepper.rx.value.map{ Float($0) }
+            .bind(to: slider.rx.value)
+            .disposed(by: disposeBag)
+    }
+    
+    func switchRx() {
         `switch`.rx.value
             .bind(to: activityView.rx.isAnimating)
             .disposed(by: disposeBag)

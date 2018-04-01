@@ -15,6 +15,8 @@
                 <outlet property="activityView" destination="ZF7-wJ-MVk" id="5fC-Xq-IeI"/>
                 <outlet property="button" destination="AaT-9s-3ci" id="2j8-He-aGo"/>
                 <outlet property="segmentControl" destination="KJ7-o0-0m8" id="oU2-7u-A0K"/>
+                <outlet property="slider" destination="f7Y-Kf-No3" id="sYF-BI-frq"/>
+                <outlet property="stepper" destination="uZw-co-2hE" id="SLN-ef-Vsz"/>
                 <outlet property="switch" destination="Zdj-Gd-A6p" id="hhk-0P-slU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,6 +26,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-9s-3ci">
+                    <rect key="frame" x="161" y="73" width="63" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="按钮"/>
+                </button>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KJ7-o0-0m8">
                     <rect key="frame" x="89" y="152" width="189" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -33,11 +40,6 @@
                         <segment title="Third"/>
                     </segments>
                 </segmentedControl>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-9s-3ci">
-                    <rect key="frame" x="161" y="73" width="63" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="按钮"/>
-                </button>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zdj-Gd-A6p">
                     <rect key="frame" x="97" y="73" width="49" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,6 +49,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </activityIndicatorView>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="f7Y-Kf-No3">
+                    <rect key="frame" x="58" y="231" width="258" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </slider>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="uZw-co-2hE">
+                    <rect key="frame" x="140" y="297" width="94" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </stepper>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
