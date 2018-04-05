@@ -11,9 +11,7 @@ import RxSwift
 import RxCocoa
 
 
-class BidirectionalBindingsController: UIViewController {
-
-     let disposeBag = DisposeBag()
+class BidirectionalBindingsController: BaseViewController {
     
     @IBOutlet weak var textFiled: UITextField!
     
