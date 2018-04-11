@@ -25,6 +25,7 @@
 		64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */; };
 		64BDC9EB206F6C0300B28BF1 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9EA206F6C0300B28BF1 /* TextFieldViewController.swift */; };
 		64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9EC206FB8A300B28BF1 /* ButtonViewController.swift */; };
+		64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB9076207B04F60049372D /* RxTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		64BDC9EA206F6C0300B28BF1 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		64BDC9EC206FB8A300B28BF1 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		64DB9076207B04F60049372D /* RxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		64EED2652064B0E7006460D0 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64EED2662064B10B006460D0 /* Scheduler.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scheduler.playground; sourceTree = "<group>"; };
 		64EED2672064B124006460D0 /* Observer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -140,6 +142,7 @@
 				647BDE49207631AA00ECF6B9 /* BidirectionalBindingsController.xib */,
 				647BDE4F2076425D00ECF6B9 /* Gesture&PickerController.swift */,
 				647BDE502076425D00ECF6B9 /* Gesture&PickerController.xib */,
+				64DB9076207B04F60049372D /* RxTableViewController.swift */,
 			);
 			path = Cocoa;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */,
 				647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */,
 				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
+				64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */,
 				647BDE512076425D00ECF6B9 /* Gesture&PickerController.swift in Sources */,
 				641B1142205E635D00684CA9 /* ViewController.swift in Sources */,
 				64BDC9EB206F6C0300B28BF1 /* TextFieldViewController.swift in Sources */,
