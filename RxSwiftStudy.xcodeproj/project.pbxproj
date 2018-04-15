@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E08C28077E21CB5562C6D38 /* Pods_RxSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C47BE41C0A8E1E9828C1BE /* Pods_RxSwiftStudy.framework */; };
 		64179EA0208306B400D50226 /* RxDataSourceRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64179E9F208306B400D50226 /* RxDataSourceRefreshController.swift */; };
+		64179EA22083196000D50226 /* RxDataSourceSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64179EA12083196000D50226 /* RxDataSourceSearchController.swift */; };
 		6417D63F207077980069C51E /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417D63D207077980069C51E /* SwitchViewController.swift */; };
 		6417D640207077980069C51E /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6417D63E207077980069C51E /* SwitchViewController.xib */; };
 		641B1140205E635D00684CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641B113F205E635D00684CA9 /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1B6A87566480E9945A62203F /* Pods-RxSwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		64179E9F208306B400D50226 /* RxDataSourceRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourceRefreshController.swift; sourceTree = "<group>"; };
+		64179EA12083196000D50226 /* RxDataSourceSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourceSearchController.swift; sourceTree = "<group>"; };
 		6417D63D207077980069C51E /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 		6417D63E207077980069C51E /* SwitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
 		641B113C205E635D00684CA9 /* RxSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				64DB9076207B04F60049372D /* RxTableViewController.swift */,
 				64BAA4022081CE44008E1ECF /* RxDataSourceViewController.swift */,
 				64179E9F208306B400D50226 /* RxDataSourceRefreshController.swift */,
+				64179EA12083196000D50226 /* RxDataSourceSearchController.swift */,
 			);
 			path = Cocoa;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */,
+				64179EA22083196000D50226 /* RxDataSourceSearchController.swift in Sources */,
 				647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */,
 				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
 				64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */,
