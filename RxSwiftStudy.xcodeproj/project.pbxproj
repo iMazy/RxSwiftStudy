@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E08C28077E21CB5562C6D38 /* Pods_RxSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C47BE41C0A8E1E9828C1BE /* Pods_RxSwiftStudy.framework */; };
+		64179EA0208306B400D50226 /* RxDataSourceRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64179E9F208306B400D50226 /* RxDataSourceRefreshController.swift */; };
 		6417D63F207077980069C51E /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417D63D207077980069C51E /* SwitchViewController.swift */; };
 		6417D640207077980069C51E /* SwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6417D63E207077980069C51E /* SwitchViewController.xib */; };
 		641B1140205E635D00684CA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641B113F205E635D00684CA9 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		1B6A87566480E9945A62203F /* Pods-RxSwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		64179E9F208306B400D50226 /* RxDataSourceRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourceRefreshController.swift; sourceTree = "<group>"; };
 		6417D63D207077980069C51E /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 		6417D63E207077980069C51E /* SwitchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchViewController.xib; sourceTree = "<group>"; };
 		641B113C205E635D00684CA9 /* RxSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 				647BDE502076425D00ECF6B9 /* Gesture&PickerController.xib */,
 				64DB9076207B04F60049372D /* RxTableViewController.swift */,
 				64BAA4022081CE44008E1ECF /* RxDataSourceViewController.swift */,
+				64179E9F208306B400D50226 /* RxDataSourceRefreshController.swift */,
 			);
 			path = Cocoa;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				64BDC9EB206F6C0300B28BF1 /* TextFieldViewController.swift in Sources */,
 				647BDE4A207631AA00ECF6B9 /* BidirectionalBindingsController.swift in Sources */,
 				641B1140205E635D00684CA9 /* AppDelegate.swift in Sources */,
+				64179EA0208306B400D50226 /* RxDataSourceRefreshController.swift in Sources */,
 				6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */,
 				6417D63F207077980069C51E /* SwitchViewController.swift in Sources */,
 				64BDC9E7206F2CAF00B28BF1 /* LabelViewController.swift in Sources */,
