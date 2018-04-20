@@ -30,6 +30,7 @@
 		64ACECC9208990F10024492B /* TitleImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64ACECC7208990F10024492B /* TitleImageViewCell.xib */; };
 		64ACECCF208991200024492B /* TitleSwitchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACECCD208991200024492B /* TitleSwitchViewCell.swift */; };
 		64ACECD0208991200024492B /* TitleSwitchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64ACECCE208991200024492B /* TitleSwitchViewCell.xib */; };
+		64ACECD22089BB640024492B /* RxDataSourcesWithHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACECD12089BB640024492B /* RxDataSourcesWithHeaderController.swift */; };
 		64BAA4032081CE44008E1ECF /* RxDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BAA4022081CE44008E1ECF /* RxDataSourceViewController.swift */; };
 		64BDC9E7206F2CAF00B28BF1 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E6206F2CAF00B28BF1 /* LabelViewController.swift */; };
 		64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */; };
@@ -72,6 +73,7 @@
 		64ACECC7208990F10024492B /* TitleImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleImageViewCell.xib; sourceTree = "<group>"; };
 		64ACECCD208991200024492B /* TitleSwitchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSwitchViewCell.swift; sourceTree = "<group>"; };
 		64ACECCE208991200024492B /* TitleSwitchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSwitchViewCell.xib; sourceTree = "<group>"; };
+		64ACECD12089BB640024492B /* RxDataSourcesWithHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourcesWithHeaderController.swift; sourceTree = "<group>"; };
 		64BAA4022081CE44008E1ECF /* RxDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourceViewController.swift; sourceTree = "<group>"; };
 		64BB02312068C72400664F41 /* Variable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Variable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64BDC9E6206F2CAF00B28BF1 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				64179EA12083196000D50226 /* RxDataSourceSearchController.swift */,
 				64179EAB2085DAE500D50226 /* RxDataSourceEditingController.swift */,
 				64ACECC3208990130024492B /* RxDataSourcesMultiCellController.swift */,
+				64ACECD12089BB640024492B /* RxDataSourcesWithHeaderController.swift */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
 			);
@@ -379,6 +382,7 @@
 				64179EA0208306B400D50226 /* RxDataSourceRefreshController.swift in Sources */,
 				6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */,
 				6417D63F207077980069C51E /* SwitchViewController.swift in Sources */,
+				64ACECD22089BB640024492B /* RxDataSourcesWithHeaderController.swift in Sources */,
 				64179EAE2085DB4A00D50226 /* TableViewModel.swift in Sources */,
 				64BDC9E7206F2CAF00B28BF1 /* LabelViewController.swift in Sources */,
 			);
