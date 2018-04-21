@@ -31,6 +31,7 @@
 		64ACECCF208991200024492B /* TitleSwitchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACECCD208991200024492B /* TitleSwitchViewCell.swift */; };
 		64ACECD0208991200024492B /* TitleSwitchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64ACECCE208991200024492B /* TitleSwitchViewCell.xib */; };
 		64ACECD22089BB640024492B /* RxDataSourcesWithHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACECD12089BB640024492B /* RxDataSourcesWithHeaderController.swift */; };
+		64ACECF4208AD4D20024492B /* RxCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACECF3208AD4D20024492B /* RxCollectionViewController.swift */; };
 		64BAA4032081CE44008E1ECF /* RxDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BAA4022081CE44008E1ECF /* RxDataSourceViewController.swift */; };
 		64BDC9E7206F2CAF00B28BF1 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E6206F2CAF00B28BF1 /* LabelViewController.swift */; };
 		64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */; };
@@ -74,6 +75,7 @@
 		64ACECCD208991200024492B /* TitleSwitchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSwitchViewCell.swift; sourceTree = "<group>"; };
 		64ACECCE208991200024492B /* TitleSwitchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSwitchViewCell.xib; sourceTree = "<group>"; };
 		64ACECD12089BB640024492B /* RxDataSourcesWithHeaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourcesWithHeaderController.swift; sourceTree = "<group>"; };
+		64ACECF3208AD4D20024492B /* RxCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewController.swift; sourceTree = "<group>"; };
 		64BAA4022081CE44008E1ECF /* RxDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourceViewController.swift; sourceTree = "<group>"; };
 		64BB02312068C72400664F41 /* Variable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Variable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64BDC9E6206F2CAF00B28BF1 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				64179EAB2085DAE500D50226 /* RxDataSourceEditingController.swift */,
 				64ACECC3208990130024492B /* RxDataSourcesMultiCellController.swift */,
 				64ACECD12089BB640024492B /* RxDataSourcesWithHeaderController.swift */,
+				64ACECF3208AD4D20024492B /* RxCollectionViewController.swift */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
 			);
@@ -370,6 +373,7 @@
 				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
 				64179EAC2085DAE500D50226 /* RxDataSourceEditingController.swift in Sources */,
 				64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */,
+				64ACECF4208AD4D20024492B /* RxCollectionViewController.swift in Sources */,
 				64ACECC4208990130024492B /* RxDataSourcesMultiCellController.swift in Sources */,
 				647BDE512076425D00ECF6B9 /* Gesture&PickerController.swift in Sources */,
 				64ACECC8208990F10024492B /* TitleImageViewCell.swift in Sources */,
