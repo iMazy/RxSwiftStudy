@@ -54,7 +54,7 @@ class RxCollectionViewController: BaseViewController {
         Observable.zip(collectionView.rx.itemSelected, collectionView.rx.modelSelected(String.self)).bind { indexPath, item in
             print("~选中项的indexPath为: \(indexPath)")
             print("~选中项的内容是: \(item)")
-        }
+        }.disposed(by: disposeBag)
         
         // 单元格取消选中事件响应
         // 获取被取消选中的单元格的索引
@@ -71,7 +71,7 @@ class RxCollectionViewController: BaseViewController {
         Observable.zip(collectionView.rx.itemDeselected, collectionView.rx.modelDeselected(String.self)).bind { indexPath, item in
             print("~被取消选中项的indexPath: \(indexPath)")
             print("~被取消选中项的内容: \(item)")
-        }
+        }.disposed(by: disposeBag)
         
         // 单元格高亮完成后的事件响应
         collectionView.rx.itemHighlighted.subscribe(onNext: { indexPath in
