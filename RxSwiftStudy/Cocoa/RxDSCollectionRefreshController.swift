@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 import RxDataSources
 
-class RxDataSourcesCollectionRefreshController: BaseViewController {
+class RxDSCollectionRefreshController: BaseViewController {
 
     var refreshButton: UIBarButtonItem = UIBarButtonItem()
     var cancelButton: UIBarButtonItem = UIBarButtonItem()
