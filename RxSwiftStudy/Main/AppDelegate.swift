@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window?.backgroundColor = .white
-        let navi = UINavigationController(rootViewController: RxDataSourcesCollectionController())
+        let navi = UINavigationController(rootViewController: RxDataSourcesCollectionRefreshController())
         window?.rootViewController = navi
         window?.makeKeyAndVisible()
         return true
