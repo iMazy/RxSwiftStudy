@@ -20,12 +20,14 @@
 		641B1145205E635D00684CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641B1143205E635D00684CA9 /* Main.storyboard */; };
 		641B1147205E635D00684CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641B1146205E635D00684CA9 /* Assets.xcassets */; };
 		641B114A205E635D00684CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641B1148205E635D00684CA9 /* LaunchScreen.storyboard */; };
+		643A043220955D0100BD8DA2 /* RxURLSessionModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A043120955D0100BD8DA2 /* RxURLSessionModelViewController.swift */; };
 		6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445952A206F264000C440F4 /* CharacterObservableVC.swift */; };
 		647BDE4A207631AA00ECF6B9 /* BidirectionalBindingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDE48207631AA00ECF6B9 /* BidirectionalBindingsController.swift */; };
 		647BDE4B207631AA00ECF6B9 /* BidirectionalBindingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647BDE49207631AA00ECF6B9 /* BidirectionalBindingsController.xib */; };
 		647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDE4C2076408400ECF6B9 /* Operators.swift */; };
 		647BDE512076425D00ECF6B9 /* Gesture&PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDE4F2076425D00ECF6B9 /* Gesture&PickerController.swift */; };
 		647BDE522076425D00ECF6B9 /* Gesture&PickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647BDE502076425D00ECF6B9 /* Gesture&PickerController.xib */; };
+		64A0796A20944F8600E1642E /* RxURLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0796920944F8600E1642E /* RxURLSessionViewController.swift */; };
 		64ACECC4208990130024492B /* RxDataSourcesMultiCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACECC3208990130024492B /* RxDataSourcesMultiCellController.swift */; };
 		64ACECC8208990F10024492B /* TitleImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ACECC6208990F10024492B /* TitleImageViewCell.swift */; };
 		64ACECC9208990F10024492B /* TitleImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64ACECC7208990F10024492B /* TitleImageViewCell.xib */; };
@@ -67,6 +69,7 @@
 		641B116A205E69F300684CA9 /* Error.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Error.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		641B116B205E69FD00684CA9 /* Filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Filter.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		641B1170205E6A6500684CA9 /* Transform.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Transform.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		643A043120955D0100BD8DA2 /* RxURLSessionModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxURLSessionModelViewController.swift; sourceTree = "<group>"; };
 		64445839205E6B33005B3991 /* Arithmetic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arithmetic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6445952A206F264000C440F4 /* CharacterObservableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservableVC.swift; sourceTree = "<group>"; };
 		647BDE48207631AA00ECF6B9 /* BidirectionalBindingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalBindingsController.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		647BDE4C2076408400ECF6B9 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		647BDE4F2076425D00ECF6B9 /* Gesture&PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gesture&PickerController.swift"; sourceTree = "<group>"; };
 		647BDE502076425D00ECF6B9 /* Gesture&PickerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Gesture&PickerController.xib"; sourceTree = "<group>"; };
+		64A0796920944F8600E1642E /* RxURLSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxURLSessionViewController.swift; sourceTree = "<group>"; };
 		64ACECC3208990130024492B /* RxDataSourcesMultiCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourcesMultiCellController.swift; sourceTree = "<group>"; };
 		64ACECC6208990F10024492B /* TitleImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleImageViewCell.swift; sourceTree = "<group>"; };
 		64ACECC7208990F10024492B /* TitleImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleImageViewCell.xib; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				64D1947E208EC173008E5076 /* RxDSCollectionRefreshController.swift */,
 				64D19480208EC834008E5076 /* RxDS_DIYCollectionViewController.swift */,
 				64D194A8208F1B28008E5076 /* RxDS_PickerViewController.swift */,
+				64A0796920944F8600E1642E /* RxURLSessionViewController.swift */,
+				643A043120955D0100BD8DA2 /* RxURLSessionModelViewController.swift */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
 			);
@@ -338,6 +344,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -345,6 +352,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -384,12 +392,14 @@
 				647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */,
 				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
 				64D19481208EC834008E5076 /* RxDS_DIYCollectionViewController.swift in Sources */,
+				643A043220955D0100BD8DA2 /* RxURLSessionModelViewController.swift in Sources */,
 				64179EAC2085DAE500D50226 /* RxDataSourceEditingController.swift in Sources */,
 				64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */,
 				64ACECF4208AD4D20024492B /* RxCollectionViewController.swift in Sources */,
 				6410AA3C208D77B2005CF512 /* RxDataSourcesCollectionController.swift in Sources */,
 				64ACECC4208990130024492B /* RxDataSourcesMultiCellController.swift in Sources */,
 				647BDE512076425D00ECF6B9 /* Gesture&PickerController.swift in Sources */,
+				64A0796A20944F8600E1642E /* RxURLSessionViewController.swift in Sources */,
 				64ACECC8208990F10024492B /* TitleImageViewCell.swift in Sources */,
 				64BAA4032081CE44008E1ECF /* RxDataSourceViewController.swift in Sources */,
 				641B1142205E635D00684CA9 /* ViewController.swift in Sources */,

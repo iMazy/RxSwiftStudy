@@ -6,5 +6,6 @@ target 'RxSwiftStudy' do
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxDataSources'
+pod 'ObjectMapper'
 
 end
