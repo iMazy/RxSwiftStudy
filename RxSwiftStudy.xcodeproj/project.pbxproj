@@ -21,6 +21,7 @@
 		641B1147205E635D00684CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641B1146205E635D00684CA9 /* Assets.xcassets */; };
 		641B114A205E635D00684CA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641B1148205E635D00684CA9 /* LaunchScreen.storyboard */; };
 		643A043220955D0100BD8DA2 /* RxURLSessionModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A043120955D0100BD8DA2 /* RxURLSessionModelViewController.swift */; };
+		643A043420994FF600BD8DA2 /* RxAlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A043320994FF600BD8DA2 /* RxAlamofireViewController.swift */; };
 		6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445952A206F264000C440F4 /* CharacterObservableVC.swift */; };
 		647BDE4A207631AA00ECF6B9 /* BidirectionalBindingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDE48207631AA00ECF6B9 /* BidirectionalBindingsController.swift */; };
 		647BDE4B207631AA00ECF6B9 /* BidirectionalBindingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647BDE49207631AA00ECF6B9 /* BidirectionalBindingsController.xib */; };
@@ -70,6 +71,7 @@
 		641B116B205E69FD00684CA9 /* Filter.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Filter.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		641B1170205E6A6500684CA9 /* Transform.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Transform.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		643A043120955D0100BD8DA2 /* RxURLSessionModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxURLSessionModelViewController.swift; sourceTree = "<group>"; };
+		643A043320994FF600BD8DA2 /* RxAlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAlamofireViewController.swift; sourceTree = "<group>"; };
 		64445839205E6B33005B3991 /* Arithmetic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arithmetic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6445952A206F264000C440F4 /* CharacterObservableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservableVC.swift; sourceTree = "<group>"; };
 		647BDE48207631AA00ECF6B9 /* BidirectionalBindingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalBindingsController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				64D194A8208F1B28008E5076 /* RxDS_PickerViewController.swift */,
 				64A0796920944F8600E1642E /* RxURLSessionViewController.swift */,
 				643A043120955D0100BD8DA2 /* RxURLSessionModelViewController.swift */,
+				643A043320994FF600BD8DA2 /* RxAlamofireViewController.swift */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
 			);
@@ -343,16 +346,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftStudy/Pods-RxSwiftStudy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -407,6 +414,7 @@
 				64BDC9EB206F6C0300B28BF1 /* TextFieldViewController.swift in Sources */,
 				647BDE4A207631AA00ECF6B9 /* BidirectionalBindingsController.swift in Sources */,
 				64D1947F208EC173008E5076 /* RxDSCollectionRefreshController.swift in Sources */,
+				643A043420994FF600BD8DA2 /* RxAlamofireViewController.swift in Sources */,
 				641B1140205E635D00684CA9 /* AppDelegate.swift in Sources */,
 				64179EA0208306B400D50226 /* RxDataSourceRefreshController.swift in Sources */,
 				6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */,

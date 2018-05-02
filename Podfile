@@ -7,5 +7,6 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxDataSources'
 pod 'ObjectMapper'
+pod 'RxAlamofire'
 
 end
