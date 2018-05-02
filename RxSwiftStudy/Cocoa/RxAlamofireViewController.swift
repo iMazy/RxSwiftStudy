@@ -16,9 +16,70 @@ class RxAlamofireViewController: BaseViewController {
     var startRequestButton: UIButton = UIButton(type: .system)
     var cancelRequestButton: UIButton = UIButton(type: .system)
     
+    var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        view.addSubview(tableView)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell_id")
+        
+        // 创建 URL 对象
+        let urlString = "https://www.douban.com/j/app/radio/channels"
+        let url = URL(string: urlString)!
+        
+        // json 转 模型
+        let data = requestJSON(.get, url).map{ $1 }.mapObject(type: Douban.self).map{ $0.channels ?? [] }
+        
+        // 数据绑定到表格
+        data.bind(to: tableView.rx.items) { (tableView, row, element) in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell_id")!
+            cell.textLabel?.text = "\(row): \(element.name!)"
+            return cell
+        }.disposed(by: disposeBag)
+    }
+    
+    func requestJsonToModel() {
+        // 创建 URL 对象
+        let urlString = "https://www.douban.com/j/app/radio/channels"
+        let url = URL(string: urlString)!
+        
+        // json 转 模型
+        requestJSON(.get, url).map{ $1 }.mapObject(type: Douban.self).subscribe(onNext: { (douban: Douban) in
+            if let channels = douban.channels {
+                print("--- 共有\(channels.count)个频道 ---")
+                for channel in channels {
+                    if let name = channel.name, let channelId = channel.channelId {
+                        print("\(name)  (id: \(channelId)")
+                    }
+                }
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    func requestToJSON() {
+        // 创建 URL 对象
+        let urlString = "https://www.douban.com/j/app/radio/channels"
+        let url = URL(string: urlString)!
+        
+        // 使用 responseJSON() 进行转换
+        request(.get, url).responseJSON().subscribe(onNext: { dataResponse in
+            let json = dataResponse.value as! [String: Any]
+            print("--- 请求成功,返回的json数据 ---")
+            print(json)
+        }).disposed(by: disposeBag)
+        
+        // 最简单的获取json 数据方法
+        requestJSON(.get, url).subscribe(onNext: { response, data in
+            let json = data as! [String: Any]
+            print("--- 请求成功,返回的json数据 ---")
+            print(json)
+        }).disposed(by: disposeBag)
+    }
+    
+    
+    func startAndCancelRequest() {
         startRequestButton.frame = CGRect(x: 100, y: 100, width: 200, height: 30)
         startRequestButton.setTitle("发起请求", for: .normal)
         view.addSubview(startRequestButton)
@@ -43,8 +104,6 @@ class RxAlamofireViewController: BaseViewController {
                 print("请求失败! 错误原因: ", error)
             }).disposed(by: disposeBag)
     }
-    
-    
     
     func rxAlamofireBaseUse() {
         // 创建 URL 对象
