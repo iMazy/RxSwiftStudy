@@ -8,5 +8,6 @@ pod 'RxCocoa'
 pod 'RxDataSources'
 pod 'ObjectMapper'
 pod 'RxAlamofire'
+pod 'Moya'
 
 end
