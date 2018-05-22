@@ -4,6 +4,21 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+let disposeBag = DisposeBag()
+let label = UILabel()
+
+// 观察者
+let observer: Binder<String> = Binder(label) { (view, text) in
+    // 收到发出的索引数后显示到label上
+    view.text = text
+}
+
+// 创建一个计时器（每0.1秒发送一个索引数）
+let timer = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
+timer.map { "当前文本数：\($0)" }.bind(to: observer).disposed(by: disposeBag)
+
+
+
 ///////////////////////////////////////////////////////////////////////////////
 /// Observer
 /// 观察者
