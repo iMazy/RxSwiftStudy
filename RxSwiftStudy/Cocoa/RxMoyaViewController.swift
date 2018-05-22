@@ -91,7 +91,7 @@ class RxMoyaViewController: BaseViewController {
                 // 数据处理
                 let json = data as! [String: Any]
                 print("--- 请求成功, 返回的数据: ---")
-                print(json)
+                
             }, onError: { error in
                 print("数据请求失败! 错误原因: ", error)
             }).disposed(by: disposeBag)
