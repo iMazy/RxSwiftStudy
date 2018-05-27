@@ -49,6 +49,9 @@
 		64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */; };
 		64BDC9EB206F6C0300B28BF1 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9EA206F6C0300B28BF1 /* TextFieldViewController.swift */; };
 		64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BDC9EC206FB8A300B28BF1 /* ButtonViewController.swift */; };
+		64CDAD1320B911750036F54A /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CDAD1220B911750036F54A /* DBModel.swift */; };
+		64CDAD1520B911810036F54A /* DBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CDAD1420B911810036F54A /* DBViewModel.swift */; };
+		64CDAD1720B9119C0036F54A /* DBMVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CDAD1620B9119C0036F54A /* DBMVVMViewController.swift */; };
 		64D1947F208EC173008E5076 /* RxDSCollectionRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1947E208EC173008E5076 /* RxDSCollectionRefreshController.swift */; };
 		64D19481208EC834008E5076 /* RxDS_DIYCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D19480208EC834008E5076 /* RxDS_DIYCollectionViewController.swift */; };
 		64D194A9208F1B28008E5076 /* RxDS_PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D194A8208F1B28008E5076 /* RxDS_PickerViewController.swift */; };
@@ -109,6 +112,9 @@
 		64BDC9E8206F2CDF00B28BF1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		64BDC9EA206F6C0300B28BF1 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		64BDC9EC206FB8A300B28BF1 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		64CDAD1220B911750036F54A /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
+		64CDAD1420B911810036F54A /* DBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
+		64CDAD1620B9119C0036F54A /* DBMVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBMVVMViewController.swift; sourceTree = "<group>"; };
 		64D1947E208EC173008E5076 /* RxDSCollectionRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDSCollectionRefreshController.swift; sourceTree = "<group>"; };
 		64D19480208EC834008E5076 /* RxDS_DIYCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDS_DIYCollectionViewController.swift; sourceTree = "<group>"; };
 		64D194A8208F1B28008E5076 /* RxDS_PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDS_PickerViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +232,7 @@
 				643A043320994FF600BD8DA2 /* RxAlamofireViewController.swift */,
 				643A046820999F9100BD8DA2 /* RxMoyaViewController.swift */,
 				643A046B2099A05700BD8DA2 /* DoubanAPI.swift */,
+				64CDAD0F20B911170036F54A /* MVVM */,
 				643A046D2099A4E500BD8DA2 /* RxMoya */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
@@ -277,6 +284,16 @@
 				641B1170205E6A6500684CA9 /* Transform.playground */,
 			);
 			path = Opetators;
+			sourceTree = "<group>";
+		};
+		64CDAD0F20B911170036F54A /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				64CDAD1220B911750036F54A /* DBModel.swift */,
+				64CDAD1420B911810036F54A /* DBViewModel.swift */,
+				64CDAD1620B9119C0036F54A /* DBMVVMViewController.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		C25720AD14FF2FDA657D6CC7 /* Frameworks */ = {
@@ -430,10 +447,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64CDAD1720B9119C0036F54A /* DBMVVMViewController.swift in Sources */,
 				64BDC9E9206F2CDF00B28BF1 /* BaseViewController.swift in Sources */,
+				64CDAD1320B911750036F54A /* DBModel.swift in Sources */,
 				64179EA22083196000D50226 /* RxDataSourceSearchController.swift in Sources */,
 				647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */,
 				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
+				64CDAD1520B911810036F54A /* DBViewModel.swift in Sources */,
 				647171C4209AA45C009F92C5 /* Single+MoyaObjectMapper.swift in Sources */,
 				64D19481208EC834008E5076 /* RxDS_DIYCollectionViewController.swift in Sources */,
 				643A043220955D0100BD8DA2 /* RxURLSessionModelViewController.swift in Sources */,
