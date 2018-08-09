@@ -16,14 +16,15 @@ let rxData: Observable<Data> = Observable.create { (observer) -> Disposable in
 }
 
 /// eg:
-rxData.subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated)).observeOn(MainScheduler.instance).subscribe(onNext: { data in
+rxData.subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
+    .observeOn(MainScheduler.instance)
+    .subscribe(onNext: { data in
     print(data)
 }).disposed(by: disposeBag)
 
 //: 使用 subscribeOn
 /// 使用 subscribeOn 来决定数据序列的构建函数在哪个 Scheduler 上运行
 /// 上例中, 获取 Data 需要花费时间, 所以用 subscribeOn 切换到后台 Schedulers 来获取 Data. 避免主线程被阻塞
-
 
 
 //: - 使用 observeOn

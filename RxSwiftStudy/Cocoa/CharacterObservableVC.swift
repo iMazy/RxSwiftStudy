@@ -14,7 +14,7 @@ class CharacterObservableVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         convertToSingle()
         
         getPlayListWithSingle("0").subscribe(onSuccess: { (result) in
