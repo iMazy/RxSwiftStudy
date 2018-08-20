@@ -12,7 +12,6 @@ import RxSwift
 
 class RxLoginViewController: BaseViewController {
 
-    
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var usernameValidLabel: UILabel!

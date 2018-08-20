@@ -36,6 +36,11 @@
 		647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDE4C2076408400ECF6B9 /* Operators.swift */; };
 		647BDE512076425D00ECF6B9 /* Gesture&PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDE4F2076425D00ECF6B9 /* Gesture&PickerController.swift */; };
 		647BDE522076425D00ECF6B9 /* Gesture&PickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 647BDE502076425D00ECF6B9 /* Gesture&PickerController.xib */; };
+		64833E81212AE99F00FE41F2 /* RxMVVMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64833E7F212AE99F00FE41F2 /* RxMVVMLoginViewController.swift */; };
+		64833E82212AE99F00FE41F2 /* RxMVVMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64833E80212AE99F00FE41F2 /* RxMVVMLoginViewController.xib */; };
+		64833E84212AEB4D00FE41F2 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64833E83212AEB4D00FE41F2 /* GithubAPI.swift */; };
+		64833E86212AEF5B00FE41F2 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64833E85212AEF5B00FE41F2 /* ValidationResult.swift */; };
+		64833E88212AF2BD00FE41F2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64833E87212AF2BD00FE41F2 /* LoginViewModel.swift */; };
 		648B5A36211C6B3B00835CB4 /* RxLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B5A34211C6B3B00835CB4 /* RxLoginViewController.swift */; };
 		648B5A37211C6B3B00835CB4 /* RxLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648B5A35211C6B3B00835CB4 /* RxLoginViewController.xib */; };
 		64A0796A20944F8600E1642E /* RxURLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0796920944F8600E1642E /* RxURLSessionViewController.swift */; };
@@ -100,6 +105,11 @@
 		647BDE4C2076408400ECF6B9 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		647BDE4F2076425D00ECF6B9 /* Gesture&PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gesture&PickerController.swift"; sourceTree = "<group>"; };
 		647BDE502076425D00ECF6B9 /* Gesture&PickerController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Gesture&PickerController.xib"; sourceTree = "<group>"; };
+		64833E7F212AE99F00FE41F2 /* RxMVVMLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMVVMLoginViewController.swift; sourceTree = "<group>"; };
+		64833E80212AE99F00FE41F2 /* RxMVVMLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxMVVMLoginViewController.xib; sourceTree = "<group>"; };
+		64833E83212AEB4D00FE41F2 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		64833E85212AEF5B00FE41F2 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		64833E87212AF2BD00FE41F2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		648B5A34211C6B3B00835CB4 /* RxLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxLoginViewController.swift; sourceTree = "<group>"; };
 		648B5A35211C6B3B00835CB4 /* RxLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxLoginViewController.xib; sourceTree = "<group>"; };
 		64A0796920944F8600E1642E /* RxURLSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxURLSessionViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +248,7 @@
 				643A046B2099A05700BD8DA2 /* DoubanAPI.swift */,
 				64CDAD0F20B911170036F54A /* MVVM */,
 				648B5A33211C6B2100835CB4 /* RxLogin */,
+				64833E7E212AE95A00FE41F2 /* RxLoginWithMVVM */,
 				643A046D2099A4E500BD8DA2 /* RxMoya */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
@@ -251,6 +262,19 @@
 				647BDE4C2076408400ECF6B9 /* Operators.swift */,
 			);
 			path = RxExtension;
+			sourceTree = "<group>";
+		};
+		64833E7E212AE95A00FE41F2 /* RxLoginWithMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				64833E7F212AE99F00FE41F2 /* RxMVVMLoginViewController.swift */,
+				64833E80212AE99F00FE41F2 /* RxMVVMLoginViewController.xib */,
+				64833E83212AEB4D00FE41F2 /* GithubAPI.swift */,
+				64833E85212AEF5B00FE41F2 /* ValidationResult.swift */,
+				64833E87212AF2BD00FE41F2 /* LoginViewModel.swift */,
+			);
+			name = RxLoginWithMVVM;
+			path = ../RxLoginWithMVVM;
 			sourceTree = "<group>";
 		};
 		648B5A33211C6B2100835CB4 /* RxLogin */ = {
@@ -390,6 +414,7 @@
 			files = (
 				641B114A205E635D00684CA9 /* LaunchScreen.storyboard in Resources */,
 				641B1147205E635D00684CA9 /* Assets.xcassets in Resources */,
+				64833E82212AE99F00FE41F2 /* RxMVVMLoginViewController.xib in Resources */,
 				647BDE522076425D00ECF6B9 /* Gesture&PickerController.xib in Resources */,
 				647BDE4B207631AA00ECF6B9 /* BidirectionalBindingsController.xib in Resources */,
 				6417D640207077980069C51E /* SwitchViewController.xib in Resources */,
@@ -470,14 +495,18 @@
 				647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */,
 				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
 				64CDAD1520B911810036F54A /* DBViewModel.swift in Sources */,
+				64833E88212AF2BD00FE41F2 /* LoginViewModel.swift in Sources */,
 				647171C4209AA45C009F92C5 /* Single+MoyaObjectMapper.swift in Sources */,
 				64D19481208EC834008E5076 /* RxDS_DIYCollectionViewController.swift in Sources */,
 				643A043220955D0100BD8DA2 /* RxURLSessionModelViewController.swift in Sources */,
+				64833E86212AEF5B00FE41F2 /* ValidationResult.swift in Sources */,
 				643A046920999F9100BD8DA2 /* RxMoyaViewController.swift in Sources */,
 				647171C2209AA43A009F92C5 /* ObserverType+ObjectMapper.swift in Sources */,
+				64833E84212AEB4D00FE41F2 /* GithubAPI.swift in Sources */,
 				64179EAC2085DAE500D50226 /* RxDataSourceEditingController.swift in Sources */,
 				64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */,
 				643A046C2099A05700BD8DA2 /* DoubanAPI.swift in Sources */,
+				64833E81212AE99F00FE41F2 /* RxMVVMLoginViewController.swift in Sources */,
 				64ACECF4208AD4D20024492B /* RxCollectionViewController.swift in Sources */,
 				6410AA3C208D77B2005CF512 /* RxDataSourcesCollectionController.swift in Sources */,
 				64ACECC4208990130024492B /* RxDataSourcesMultiCellController.swift in Sources */,
