@@ -29,6 +29,8 @@
 		643A04752099A54400BD8DA2 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A04742099A54400BD8DA2 /* Single+Response.swift */; };
 		643A04772099D0CA00BD8DA2 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A04762099D0CA00BD8DA2 /* Response+ObjectMapper.swift */; };
 		6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445952A206F264000C440F4 /* CharacterObservableVC.swift */; };
+		645E3CF7212BB6AB00966712 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E3CF5212BB6AB00966712 /* CitySearchViewController.swift */; };
+		645E3CF8212BB6AB00966712 /* CitySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645E3CF6212BB6AB00966712 /* CitySearchViewController.xib */; };
 		647171C2209AA43A009F92C5 /* ObserverType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647171C1209AA43A009F92C5 /* ObserverType+ObjectMapper.swift */; };
 		647171C4209AA45C009F92C5 /* Single+MoyaObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647171C3209AA45C009F92C5 /* Single+MoyaObjectMapper.swift */; };
 		647BDE4A207631AA00ECF6B9 /* BidirectionalBindingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647BDE48207631AA00ECF6B9 /* BidirectionalBindingsController.swift */; };
@@ -98,6 +100,8 @@
 		643A04762099D0CA00BD8DA2 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
 		64445839205E6B33005B3991 /* Arithmetic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arithmetic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6445952A206F264000C440F4 /* CharacterObservableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservableVC.swift; sourceTree = "<group>"; };
+		645E3CF5212BB6AB00966712 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
+		645E3CF6212BB6AB00966712 /* CitySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitySearchViewController.xib; sourceTree = "<group>"; };
 		647171C1209AA43A009F92C5 /* ObserverType+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObserverType+ObjectMapper.swift"; sourceTree = "<group>"; };
 		647171C3209AA45C009F92C5 /* Single+MoyaObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+MoyaObjectMapper.swift"; sourceTree = "<group>"; };
 		647BDE48207631AA00ECF6B9 /* BidirectionalBindingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalBindingsController.swift; sourceTree = "<group>"; };
@@ -250,10 +254,20 @@
 				648B5A33211C6B2100835CB4 /* RxLogin */,
 				64833E7E212AE95A00FE41F2 /* RxLoginWithMVVM */,
 				643A046D2099A4E500BD8DA2 /* RxMoya */,
+				645E3CF4212BB67B00966712 /* CitySearch */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
 			);
 			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		645E3CF4212BB67B00966712 /* CitySearch */ = {
+			isa = PBXGroup;
+			children = (
+				645E3CF5212BB6AB00966712 /* CitySearchViewController.swift */,
+				645E3CF6212BB6AB00966712 /* CitySearchViewController.xib */,
+			);
+			path = CitySearch;
 			sourceTree = "<group>";
 		};
 		647BDE4E207641C900ECF6B9 /* RxExtension */ = {
@@ -421,6 +435,7 @@
 				641B1145205E635D00684CA9 /* Main.storyboard in Resources */,
 				648B5A37211C6B3B00835CB4 /* RxLoginViewController.xib in Resources */,
 				64ACECC9208990F10024492B /* TitleImageViewCell.xib in Resources */,
+				645E3CF8212BB6AB00966712 /* CitySearchViewController.xib in Resources */,
 				64ACECD0208991200024492B /* TitleSwitchViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +539,7 @@
 				643A043420994FF600BD8DA2 /* RxAlamofireViewController.swift in Sources */,
 				641B1140205E635D00684CA9 /* AppDelegate.swift in Sources */,
 				64179EA0208306B400D50226 /* RxDataSourceRefreshController.swift in Sources */,
+				645E3CF7212BB6AB00966712 /* CitySearchViewController.swift in Sources */,
 				6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */,
 				6417D63F207077980069C51E /* SwitchViewController.swift in Sources */,
 				64ACECD22089BB640024492B /* RxDataSourcesWithHeaderController.swift in Sources */,
