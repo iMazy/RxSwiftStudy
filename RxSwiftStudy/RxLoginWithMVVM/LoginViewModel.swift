@@ -25,7 +25,7 @@ class LoginViewModel {
         loginTap: Observable<Void>)) {
         
         let API = GithubAPI.shared
-        
+    
         validationUsername = input.username.flatMapLatest({ username -> Observable<ValidationResult> in
             // 是否为空
             if username.count == 0 {
@@ -59,7 +59,7 @@ class LoginViewModel {
         }).share(replay: 1)
         
         loginEnable = Observable.combineLatest(validationUsername, validationPassword, resultSelector: { (username, password) in
-            username.isValid && password.isValid
+            return username.isValid && password.isValid
         }).distinctUntilChanged()
         .share(replay: 1)
         

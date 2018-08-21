@@ -32,31 +32,34 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blU-48-fDi">
-                    <rect key="frame" x="50" y="151" width="275" height="30"/>
+                    <rect key="frame" x="50" y="151" width="275" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="ok7-ty-vcJ"/>
+                    </constraints>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQq-o9-AGf">
-                    <rect key="frame" x="50" y="191" width="132" height="17"/>
+                    <rect key="frame" x="50" y="197" width="132" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.85490196080000003" green="0.33725490200000002" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qj3-yf-x1e">
-                    <rect key="frame" x="50" y="228" width="275" height="30"/>
+                    <rect key="frame" x="50" y="234" width="275" height="36"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password validation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0g-5i-7WE">
-                    <rect key="frame" x="50" y="268" width="128" height="17"/>
+                    <rect key="frame" x="50" y="280" width="128" height="17"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.85490196080000003" green="0.33725490200000002" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-20-MY1">
-                    <rect key="frame" x="50" y="315" width="275" height="36"/>
+                    <rect key="frame" x="50" y="327" width="275" height="36"/>
                     <color key="backgroundColor" red="0.13725490200000001" green="0.74117647060000003" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="sdf-2m-Xix"/>
@@ -78,6 +81,7 @@
                 <constraint firstItem="xAR-20-MY1" firstAttribute="leading" secondItem="Qj3-yf-x1e" secondAttribute="leading" id="PxW-Gs-kbY"/>
                 <constraint firstItem="UQq-o9-AGf" firstAttribute="top" secondItem="blU-48-fDi" secondAttribute="bottom" constant="10" id="R3h-n5-GWb"/>
                 <constraint firstItem="UQq-o9-AGf" firstAttribute="leading" secondItem="blU-48-fDi" secondAttribute="leading" id="Rhp-U9-hbC"/>
+                <constraint firstItem="Qj3-yf-x1e" firstAttribute="height" secondItem="blU-48-fDi" secondAttribute="height" id="fts-4d-GtK"/>
                 <constraint firstItem="Qj3-yf-x1e" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="q3d-O7-891"/>
                 <constraint firstItem="blU-48-fDi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="srt-1m-f6P"/>
                 <constraint firstItem="A0g-5i-7WE" firstAttribute="leading" secondItem="Qj3-yf-x1e" secondAttribute="leading" id="tFr-gN-2Ft"/>

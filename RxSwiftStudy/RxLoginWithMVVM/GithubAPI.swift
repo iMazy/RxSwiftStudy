@@ -21,10 +21,10 @@ class GithubAPI {
     }
     
     func usernameAvailable(_ username: String) -> Observable<Bool> {
-        let url = URL(string: "https://api.github.com/username=\(username.URLEscaped)")!
+        let url = URL(string: "https://github.com/\(username.URLEscaped)")!
         let request = URLRequest(url: url)
         return urlSession.rx.response(request: request).map({ response, _ in
-            return response.statusCode == 404
+            return response.statusCode == 200
         }).catchErrorJustReturn(false)
     }
     

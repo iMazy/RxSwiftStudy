@@ -21,7 +21,39 @@ class RxMVVMLoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let viewModel = LoginViewModel(input: (username: usernameField.rx.text.orEmpty.asObservable(), password: passwordField.rx.text.orEmpty.asObservable(), loginTap: loginButton.rx.tap.asObservable()))
+        
+        loginButton.rx.tap.asObservable().bind(to: viewModel.loginTap).disposed(by: disposeBag)
+        
+        viewModel.validationUsername.bind(to: usernameValidation.rx.validationResult).disposed(by: disposeBag)
+        
+        viewModel.validationPassword.bind(to: passwordValidation.rx.validationResult).disposed(by: disposeBag)
+        
+        viewModel.loginEnable.subscribe(onNext: { [unowned self] valid in
+            self.loginButton.isEnabled = valid
+            self.loginButton.alpha = valid ? 1.0 : 0.5
+        }).disposed(by: disposeBag)
+        
+        viewModel.logined.subscribe(onNext: { logined in
+            print("User login is \(logined)")
+        }).disposed(by: disposeBag)
+        
+        let tapBackground = UITapGestureRecognizer()
+        tapBackground.rx.event.subscribe(onNext: { [unowned self] _ in
+            self.view.endEditing(true)
+        }).disposed(by: disposeBag)
+        
+        view.addGestureRecognizer(tapBackground)
+        
+        usernameField.rx.controlEvent(.editingDidEnd).subscribe(onNext: { [unowned self] in
+            self.usernameField.becomeFirstResponder()
+        }).disposed(by: disposeBag)
+        
+        passwordField.rx.controlEvent(.editingDidEnd).subscribe(onNext: { [unowned self] in
+            self.passwordField.becomeFirstResponder()
+        }).disposed(by: disposeBag)
+        
+        loginButton.rx.controlEvent(.editingDidEndOnExit).bind(to: viewModel.loginTap).disposed(by: disposeBag)
     }
 
 }
