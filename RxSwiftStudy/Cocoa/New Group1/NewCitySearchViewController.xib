@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewCitySearchViewController" customModule="RxSwiftStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="favoriteSwitch" destination="1Ol-Q8-YzP" id="DeZ-ge-kFg"/>
+                <outlet property="searchField" destination="QwQ-vU-nSL" id="8aU-4a-IHd"/>
+                <outlet property="tableView" destination="5fR-ml-Oi9" id="e5c-1J-uBy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDg-Jv-3jr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QwQ-vU-nSL">
+                            <rect key="frame" x="30" y="22" width="236" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="bb4-MA-Edi"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Ol-Q8-YzP">
+                            <rect key="frame" x="296" y="24.5" width="51" height="31"/>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1Ol-Q8-YzP" firstAttribute="centerY" secondItem="nDg-Jv-3jr" secondAttribute="centerY" id="27N-4r-D0C"/>
+                        <constraint firstItem="QwQ-vU-nSL" firstAttribute="centerY" secondItem="nDg-Jv-3jr" secondAttribute="centerY" id="4gX-Zd-Zof"/>
+                        <constraint firstItem="QwQ-vU-nSL" firstAttribute="leading" secondItem="nDg-Jv-3jr" secondAttribute="leading" constant="30" id="JRw-4c-EMQ"/>
+                        <constraint firstItem="1Ol-Q8-YzP" firstAttribute="leading" secondItem="QwQ-vU-nSL" secondAttribute="trailing" constant="30" id="VEa-g1-s12"/>
+                        <constraint firstAttribute="height" constant="80" id="awz-0m-HMF"/>
+                        <constraint firstAttribute="trailing" secondItem="1Ol-Q8-YzP" secondAttribute="trailing" constant="30" id="eC8-DI-wHI"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5fR-ml-Oi9">
+                    <rect key="frame" x="0.0" y="80" width="375" height="587"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nDg-Jv-3jr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="87F-RQ-8ym"/>
+                <constraint firstItem="5fR-ml-Oi9" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Gnz-bY-8hA"/>
+                <constraint firstItem="nDg-Jv-3jr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VMq-0f-q0J"/>
+                <constraint firstItem="5fR-ml-Oi9" firstAttribute="top" secondItem="nDg-Jv-3jr" secondAttribute="bottom" id="W45-03-uq8"/>
+                <constraint firstItem="5fR-ml-Oi9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jJM-aU-QTo"/>
+                <constraint firstItem="nDg-Jv-3jr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vIb-6F-C5N"/>
+                <constraint firstItem="5fR-ml-Oi9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="x70-fG-RQY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

@@ -29,6 +29,8 @@
 		643A04752099A54400BD8DA2 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A04742099A54400BD8DA2 /* Single+Response.swift */; };
 		643A04772099D0CA00BD8DA2 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A04762099D0CA00BD8DA2 /* Response+ObjectMapper.swift */; };
 		6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445952A206F264000C440F4 /* CharacterObservableVC.swift */; };
+		645368BD212D4F29004A5569 /* NewCitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645368BB212D4F29004A5569 /* NewCitySearchViewController.swift */; };
+		645368BE212D4F29004A5569 /* NewCitySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645368BC212D4F29004A5569 /* NewCitySearchViewController.xib */; };
 		645E3CF7212BB6AB00966712 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E3CF5212BB6AB00966712 /* CitySearchViewController.swift */; };
 		645E3CF8212BB6AB00966712 /* CitySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645E3CF6212BB6AB00966712 /* CitySearchViewController.xib */; };
 		647171C2209AA43A009F92C5 /* ObserverType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647171C1209AA43A009F92C5 /* ObserverType+ObjectMapper.swift */; };
@@ -100,6 +102,8 @@
 		643A04762099D0CA00BD8DA2 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
 		64445839205E6B33005B3991 /* Arithmetic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Arithmetic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6445952A206F264000C440F4 /* CharacterObservableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservableVC.swift; sourceTree = "<group>"; };
+		645368BB212D4F29004A5569 /* NewCitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCitySearchViewController.swift; sourceTree = "<group>"; };
+		645368BC212D4F29004A5569 /* NewCitySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCitySearchViewController.xib; sourceTree = "<group>"; };
 		645E3CF5212BB6AB00966712 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
 		645E3CF6212BB6AB00966712 /* CitySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitySearchViewController.xib; sourceTree = "<group>"; };
 		647171C1209AA43A009F92C5 /* ObserverType+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObserverType+ObjectMapper.swift"; sourceTree = "<group>"; };
@@ -255,10 +259,21 @@
 				64833E7E212AE95A00FE41F2 /* RxLoginWithMVVM */,
 				643A046D2099A4E500BD8DA2 /* RxMoya */,
 				645E3CF4212BB67B00966712 /* CitySearch */,
+				645368BA212D4EE9004A5569 /* CitySearchNew */,
 				64ACECCA208990F50024492B /* Cell */,
 				64ACECC5208990C00024492B /* Model */,
 			);
 			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		645368BA212D4EE9004A5569 /* CitySearchNew */ = {
+			isa = PBXGroup;
+			children = (
+				645368BB212D4F29004A5569 /* NewCitySearchViewController.swift */,
+				645368BC212D4F29004A5569 /* NewCitySearchViewController.xib */,
+			);
+			name = CitySearchNew;
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		645E3CF4212BB67B00966712 /* CitySearch */ = {
@@ -434,6 +449,7 @@
 				6417D640207077980069C51E /* SwitchViewController.xib in Resources */,
 				641B1145205E635D00684CA9 /* Main.storyboard in Resources */,
 				648B5A37211C6B3B00835CB4 /* RxLoginViewController.xib in Resources */,
+				645368BE212D4F29004A5569 /* NewCitySearchViewController.xib in Resources */,
 				64ACECC9208990F10024492B /* TitleImageViewCell.xib in Resources */,
 				645E3CF8212BB6AB00966712 /* CitySearchViewController.xib in Resources */,
 				64ACECD0208991200024492B /* TitleSwitchViewCell.xib in Resources */,
@@ -520,6 +536,7 @@
 				643A046920999F9100BD8DA2 /* RxMoyaViewController.swift in Sources */,
 				647171C2209AA43A009F92C5 /* ObserverType+ObjectMapper.swift in Sources */,
 				64833E84212AEB4D00FE41F2 /* GithubAPI.swift in Sources */,
+				645368BD212D4F29004A5569 /* NewCitySearchViewController.swift in Sources */,
 				64179EAC2085DAE500D50226 /* RxDataSourceEditingController.swift in Sources */,
 				64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */,
 				643A046C2099A05700BD8DA2 /* DoubanAPI.swift in Sources */,
