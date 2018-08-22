@@ -37,6 +37,11 @@ class TextFieldViewController: BaseViewController {
         view.addSubview(label)
         
         Observable.combineLatest(inputField1.rx.text.orEmpty, inputField2.rx.text.orEmpty) {
+            (textValue1, textValue2) in
+            print("你输入的号码是: \(textValue1)-\(textValue2)")
+        }
+        
+        Observable.combineLatest(inputField1.rx.text.orEmpty, inputField2.rx.text.orEmpty) {
             textValue1, textValue2 -> String in
                 return "你输入的号码是: \(textValue1)-\(textValue2)"
             }.map{ $0 }
@@ -56,11 +61,11 @@ class TextFieldViewController: BaseViewController {
         inputField1.rx.controlEvent([.editingDidBegin]).asObservable().subscribe(onNext: {
             print("开始编辑")
         }).disposed(by: disposeBag)
-        
+
         inputField1.rx.controlEvent([.editingDidEndOnExit]).subscribe(onNext: {
             inputField2.becomeFirstResponder()
         }).disposed(by: disposeBag)
-        
+
         inputField2.rx.controlEvent([.editingDidEndOnExit]).subscribe(onNext: {
             inputField2.resignFirstResponder()
         }).disposed(by: disposeBag)
@@ -93,6 +98,9 @@ class TextFieldViewController: BaseViewController {
             .asDriver() // 将普通序列转换为 Driver
             .throttle(0.3) // 在主线程中操作，0.3秒内值若多次改变，取最后一次
         
+        // Binder 实现
+        inputField.rx.text.bind(to: outputField.rx.text).disposed(by: disposeBag)
+        
         // 将内容绑定到另一个输入框中
         input.drive(outputField.rx.text).disposed(by: disposeBag)
         
@@ -104,6 +112,10 @@ class TextFieldViewController: BaseViewController {
         // 根据内容字数决定按钮是否可以点击
         input.map({ $0.count > 5 })
             .drive(button.rx.isEnabled)
+            .disposed(by: disposeBag)
+        
+        inputField.rx.text
+            .bind(to: label.rx.text)
             .disposed(by: disposeBag)
     }
     
@@ -136,15 +148,15 @@ class TextFieldViewController: BaseViewController {
         textView.rx.didBeginEditing.subscribe(onNext: {
             print("开始编辑")
         }).disposed(by: disposeBag)
-        
+
         textView.rx.didEndEditing.subscribe(onNext: {
             print("结束编辑")
         }).disposed(by: disposeBag)
-        
+
         textView.rx.didChange.subscribe(onNext: {
             print("内容发生改变")
         }).disposed(by: disposeBag)
-        
+
         textView.rx.didChangeSelection.subscribe(onNext: {
             print("选中部分发生改变")
         }).disposed(by: disposeBag)

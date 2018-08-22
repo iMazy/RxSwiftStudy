@@ -38,11 +38,19 @@ class ButtonViewController: BaseViewController {
             .bind(to: button.rx.title(for: .normal))
             .disposed(by: disposeBag)
         
+        
+        Observable.just("dddd")
+            .bind(to: button.rx.title(for: .normal))
+            .disposed(by: disposeBag)
+        
+        
         /// 属性文本的绑定
         let timer1 = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
         timer1.map(attributeStringWith)
             .bind(to: button.rx.attributedTitle())
             .disposed(by: disposeBag)
+        
+        Observable.just(UIImage(named: "DD")).bind(to: button.rx.image()).disposed(by: disposeBag)
         
         /// 按钮图标的绑定
 //        timer.map({

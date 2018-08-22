@@ -36,19 +36,23 @@ class SwitchViewController: BaseViewController {
         
         /// slider 与 stepper 绑定
         // slider -> stepper
-        slider.rx.value.map{ Double($0) }.bind(to: stepper.rx.value).disposed(by: disposeBag)
-        
+        slider.rx.value.map{ Double($0) }
+            .bind(to: stepper.rx.value)
+            .disposed(by: disposeBag)
+
         // stepper -> slider
         stepper.rx.value.map{ Float($0) }
             .bind(to: slider.rx.value)
             .disposed(by: disposeBag)
+        
+        switchRx()
     }
     
     func switchRx() {
         `switch`.rx.value
             .bind(to: activityView.rx.isAnimating)
             .disposed(by: disposeBag)
-        
+
         `switch`.rx.isOn
             .bind(to: UIApplication.shared.rx.isNetworkActivityIndicatorVisible)
             .disposed(by: disposeBag)

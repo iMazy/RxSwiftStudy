@@ -24,6 +24,8 @@ class LabelViewController: BaseViewController {
         let label = UILabel(frame: CGRect(x: 100, y: 100, width: 300, height: 100))
         view.addSubview(label)
         
+        Observable.just("hello").bind(to: label.rx.text).disposed(by: disposeBag)
+        
         // 创建一个计时器（每0.1秒发送一个索引数）
         let timer = Observable<Int>.interval(0.1, scheduler: MainScheduler.instance)
         

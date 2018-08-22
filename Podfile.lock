@@ -19,6 +19,9 @@ PODS:
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+  - RxGesture (1.2.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.1.2)
 
 DEPENDENCIES:
@@ -27,6 +30,7 @@ DEPENDENCIES:
   - RxAlamofire
   - RxCocoa
   - RxDataSources
+  - RxGesture
   - RxSwift
 
 SPEC REPOS:
@@ -39,6 +43,7 @@ SPEC REPOS:
     - RxAlamofire
     - RxCocoa
     - RxDataSources
+    - RxGesture
     - RxSwift
 
 SPEC CHECKSUMS:
@@ -50,8 +55,9 @@ SPEC CHECKSUMS:
   RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
   RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
   RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
   RxSwift: e49536837d9901277638493ea537394d4b55f570
 
-PODFILE CHECKSUM: 4fee2c4755ef8ebb349c89ba0282d8fb903e12c4
+PODFILE CHECKSUM: f0fef312f97e1b61474e92accf35331e83cc97ae
 
 COCOAPODS: 1.5.3
