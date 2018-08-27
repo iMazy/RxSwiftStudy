@@ -57,6 +57,7 @@ class RxDataSourcesWithHeaderController: BaseViewController {
         
         // 设置代理
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
+//        tableView.rx.setDataSource(self).disposed(by: disposeBag)
     }
 }
 

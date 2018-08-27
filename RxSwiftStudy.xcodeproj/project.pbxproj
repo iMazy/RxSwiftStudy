@@ -31,6 +31,7 @@
 		6445952B206F264000C440F4 /* CharacterObservableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445952A206F264000C440F4 /* CharacterObservableVC.swift */; };
 		645368BD212D4F29004A5569 /* NewCitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645368BB212D4F29004A5569 /* NewCitySearchViewController.swift */; };
 		645368BE212D4F29004A5569 /* NewCitySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645368BC212D4F29004A5569 /* NewCitySearchViewController.xib */; };
+		6454916B2133FB02007447BA /* RxBinder&DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6454916A2133FB02007447BA /* RxBinder&DriverViewController.swift */; };
 		645E3CF7212BB6AB00966712 /* CitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E3CF5212BB6AB00966712 /* CitySearchViewController.swift */; };
 		645E3CF8212BB6AB00966712 /* CitySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645E3CF6212BB6AB00966712 /* CitySearchViewController.xib */; };
 		647171C2209AA43A009F92C5 /* ObserverType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647171C1209AA43A009F92C5 /* ObserverType+ObjectMapper.swift */; };
@@ -104,6 +105,7 @@
 		6445952A206F264000C440F4 /* CharacterObservableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObservableVC.swift; sourceTree = "<group>"; };
 		645368BB212D4F29004A5569 /* NewCitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCitySearchViewController.swift; sourceTree = "<group>"; };
 		645368BC212D4F29004A5569 /* NewCitySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCitySearchViewController.xib; sourceTree = "<group>"; };
+		6454916A2133FB02007447BA /* RxBinder&DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxBinder&DriverViewController.swift"; sourceTree = "<group>"; };
 		645E3CF5212BB6AB00966712 /* CitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearchViewController.swift; sourceTree = "<group>"; };
 		645E3CF6212BB6AB00966712 /* CitySearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitySearchViewController.xib; sourceTree = "<group>"; };
 		647171C1209AA43A009F92C5 /* ObserverType+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObserverType+ObjectMapper.swift"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				647BDE49207631AA00ECF6B9 /* BidirectionalBindingsController.xib */,
 				647BDE4F2076425D00ECF6B9 /* Gesture&PickerController.swift */,
 				647BDE502076425D00ECF6B9 /* Gesture&PickerController.xib */,
+				6454916A2133FB02007447BA /* RxBinder&DriverViewController.swift */,
 				64DB9076207B04F60049372D /* RxTableViewController.swift */,
 				64BAA4022081CE44008E1ECF /* RxDataSourceViewController.swift */,
 				64179E9F208306B400D50226 /* RxDataSourceRefreshController.swift */,
@@ -541,6 +544,7 @@
 				64DB9077207B04F60049372D /* RxTableViewController.swift in Sources */,
 				643A046C2099A05700BD8DA2 /* DoubanAPI.swift in Sources */,
 				64833E81212AE99F00FE41F2 /* RxMVVMLoginViewController.swift in Sources */,
+				6454916B2133FB02007447BA /* RxBinder&DriverViewController.swift in Sources */,
 				64ACECF4208AD4D20024492B /* RxCollectionViewController.swift in Sources */,
 				6410AA3C208D77B2005CF512 /* RxDataSourcesCollectionController.swift in Sources */,
 				64ACECC4208990130024492B /* RxDataSourcesMultiCellController.swift in Sources */,
