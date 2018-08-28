@@ -11,4 +11,6 @@ pod 'RxAlamofire'
 pod 'Moya'
 pod 'RxGesture'
 
+pod 'PullToRefresher'
+
 end

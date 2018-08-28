@@ -46,6 +46,8 @@
 		64833E84212AEB4D00FE41F2 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64833E83212AEB4D00FE41F2 /* GithubAPI.swift */; };
 		64833E86212AEF5B00FE41F2 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64833E85212AEF5B00FE41F2 /* ValidationResult.swift */; };
 		64833E88212AF2BD00FE41F2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64833E87212AF2BD00FE41F2 /* LoginViewModel.swift */; };
+		6484BC122134E8C80071001F /* RxRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484BC102134E8C80071001F /* RxRefreshViewController.swift */; };
+		6484BC152134F33C0071001F /* RefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484BC142134F33C0071001F /* RefreshViewModel.swift */; };
 		648B5A36211C6B3B00835CB4 /* RxLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B5A34211C6B3B00835CB4 /* RxLoginViewController.swift */; };
 		648B5A37211C6B3B00835CB4 /* RxLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 648B5A35211C6B3B00835CB4 /* RxLoginViewController.xib */; };
 		64A0796A20944F8600E1642E /* RxURLSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0796920944F8600E1642E /* RxURLSessionViewController.swift */; };
@@ -120,6 +122,8 @@
 		64833E83212AEB4D00FE41F2 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
 		64833E85212AEF5B00FE41F2 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		64833E87212AF2BD00FE41F2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6484BC102134E8C80071001F /* RxRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRefreshViewController.swift; sourceTree = "<group>"; };
+		6484BC142134F33C0071001F /* RefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewModel.swift; sourceTree = "<group>"; };
 		648B5A34211C6B3B00835CB4 /* RxLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxLoginViewController.swift; sourceTree = "<group>"; };
 		648B5A35211C6B3B00835CB4 /* RxLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxLoginViewController.xib; sourceTree = "<group>"; };
 		64A0796920944F8600E1642E /* RxURLSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxURLSessionViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 		641B113E205E635D00684CA9 /* RxSwiftStudy */ = {
 			isa = PBXGroup;
 			children = (
+				6484BC0F2134E8A20071001F /* MVVM&Refresh */,
 				64459529206F239300C440F4 /* Cocoa */,
 				64B2B68D206F22F5002469D3 /* Opetators */,
 				641B115E205E67F300684CA9 /* Main */,
@@ -307,6 +312,15 @@
 			);
 			name = RxLoginWithMVVM;
 			path = ../RxLoginWithMVVM;
+			sourceTree = "<group>";
+		};
+		6484BC0F2134E8A20071001F /* MVVM&Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				6484BC102134E8C80071001F /* RxRefreshViewController.swift */,
+				6484BC142134F33C0071001F /* RefreshViewModel.swift */,
+			);
+			path = "MVVM&Refresh";
 			sourceTree = "<group>";
 		};
 		648B5A33211C6B2100835CB4 /* RxLogin */ = {
@@ -473,6 +487,7 @@
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -486,6 +501,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -529,6 +545,7 @@
 				64CDAD1320B911750036F54A /* DBModel.swift in Sources */,
 				64179EA22083196000D50226 /* RxDataSourceSearchController.swift in Sources */,
 				647BDE4D2076408400ECF6B9 /* Operators.swift in Sources */,
+				6484BC122134E8C80071001F /* RxRefreshViewController.swift in Sources */,
 				64BDC9ED206FB8A300B28BF1 /* ButtonViewController.swift in Sources */,
 				64CDAD1520B911810036F54A /* DBViewModel.swift in Sources */,
 				64833E88212AF2BD00FE41F2 /* LoginViewModel.swift in Sources */,
@@ -538,6 +555,7 @@
 				64833E86212AEF5B00FE41F2 /* ValidationResult.swift in Sources */,
 				643A046920999F9100BD8DA2 /* RxMoyaViewController.swift in Sources */,
 				647171C2209AA43A009F92C5 /* ObserverType+ObjectMapper.swift in Sources */,
+				6484BC152134F33C0071001F /* RefreshViewModel.swift in Sources */,
 				64833E84212AEB4D00FE41F2 /* GithubAPI.swift in Sources */,
 				645368BD212D4F29004A5569 /* NewCitySearchViewController.swift in Sources */,
 				64179EAC2085DAE500D50226 /* RxDataSourceEditingController.swift in Sources */,
