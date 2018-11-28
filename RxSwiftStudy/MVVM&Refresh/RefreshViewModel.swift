@@ -26,6 +26,7 @@ class RefreshViewModel {
 }
 
 extension RefreshViewModel: XMViewModelType {
+    
     struct Input {
         let requestCommand = PublishSubject<Bool>()
     }
@@ -33,19 +34,21 @@ extension RefreshViewModel: XMViewModelType {
     struct Output {
         
         let sections: Driver<[String]>
-        let refreshEnd: BehaviorRelay<Bool>
+        let refreshEnd: Variable<Bool>
         init(sections: Driver<[String]>) {
             self.sections = sections
-            refreshEnd = BehaviorRelay(value: false)
+            refreshEnd = Variable(false)
         }
     }
     
-    func transform(input: Input) -> Output {
+   func transform(input: Input) -> Output {
         let tempSctions = vmDatas.asObservable().asDriver(onErrorJustReturn: [])
         let output = Output(sections: tempSctions)
         input.requestCommand.subscribe(onNext: { [weak self] (isPull) in
             guard let `self` = self else { return }
-            output.refreshEnd.accept(false)
+            print("------------------------")
+//            output.refreshEnd.accept(false)
+            output.refreshEnd.value = false
             var dataSource: [String] = ["0","1","2","3","4","5","6","7","8","9","10"] + ["0","1","2","3","4"]
             if isPull {
                 dataSource = dataSource + ["0","1","2","3","4","5","6","7","8","9","10"] + ["0","1","2","3","4"]
@@ -55,7 +58,8 @@ extension RefreshViewModel: XMViewModelType {
             // 更新数据
             DispatchQueue.main.asyncAfter(wallDeadline: DispatchWallTime.now() + 2) {
                 self.vmDatas.accept(dataSource)
-                output.refreshEnd.accept(true)
+                output.refreshEnd.value = true
+                
             }
         }).disposed(by: disposeBag)
         return output

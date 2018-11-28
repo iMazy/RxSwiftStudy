@@ -59,7 +59,7 @@ class RxRefreshViewController: BaseViewController {
         tableView.addPullToRefresh(PullToRefresh()) { [unowned self] in
 //            subjects.onNext(self.dataSource)
             vmInput.requestCommand.onNext(true)
-            self.vmOutput?.refreshEnd.subscribe(onNext: { result in
+            self.vmOutput?.refreshEnd.asObservable().share(replay: 1).subscribe(onNext: { result in
                 if result {                
                     self.tableView.endRefreshing(at: .top)
                     print(result)

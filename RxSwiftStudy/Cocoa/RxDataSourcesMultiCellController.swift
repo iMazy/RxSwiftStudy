@@ -25,11 +25,11 @@ class RxDataSourcesMultiCellController: BaseViewController {
         
         // 初始化数据
         let sections = Observable.just([
-                MySection(header: "我是第一个分区", items: [
-                    .TitleImageSectionItem(title: "PHP", image: #imageLiteral(resourceName: "php")),
-                    .TitleImageSectionItem(title: "React", image: #imageLiteral(resourceName: "react")),
-                    .TitleSwitchSectionItem(title: "Switch on", enabled: true)
-                    ]),
+            MySection(header: "我是第一个分区", items: [
+                .TitleImageSectionItem(title: "PHP", image: #imageLiteral(resourceName: "php")),
+                .TitleImageSectionItem(title: "React", image: #imageLiteral(resourceName: "react")),
+                .TitleSwitchSectionItem(title: "Switch on", enabled: true)
+                ]),
             MySection(header: "我是第二个分区", items: [
                 .TitleSwitchSectionItem(title: "Switch off", enabled: false),
                 .TitleSwitchSectionItem(title: "Switch on", enabled: true),

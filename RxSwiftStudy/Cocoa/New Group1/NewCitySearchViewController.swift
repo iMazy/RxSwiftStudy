@@ -69,5 +69,4 @@ class NewCitySearchViewController: BaseViewController {
         }
         return true
     }
-
 }

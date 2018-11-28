@@ -51,6 +51,8 @@ class RxDataSourceRefreshController: BaseViewController {
         randomResult.bind(to: tableView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
     }
     
+    
+    
     /// 获取数据
     func getRandomResult() -> Observable<[SectionModel<String, Int>]> {
         print("正在请求数据")
@@ -63,21 +65,21 @@ class RxDataSourceRefreshController: BaseViewController {
         refreshButton = UIBarButtonItem()
         refreshButton.title = "刷新"
         self.navigationItem.rightBarButtonItem = refreshButton
-        
+
         // 创建表格
         tableView = UITableView(frame: view.bounds, style: .plain)
         // 注册单元格
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
         view.addSubview(tableView)
-        
+
         // 初始化数据
         let randomResult = refreshButton.rx.tap.asObservable()
             .throttle(1, scheduler: MainScheduler.instance) // 在主线程中操作, 若1秒钟多次改变, 取最后一次
             .startWith(()) // 加这个是为了一开始就能自动请求一次数据
-            .flatMapLatest(getRandomResult)
+            .flatMapLatest(getRandomResult) // 连续请求时只取最后一次数据
             .share(replay: 1)
-        
-        
+
+
         // 创建数据源
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, Int>>( configureCell: {
             (dataSource, tableView, indexPath, element) -> UITableViewCell in
@@ -85,7 +87,7 @@ class RxDataSourceRefreshController: BaseViewController {
             cell.textLabel?.text = "条目\(indexPath.row): \(element)"
             return cell
         })
-        
+
         // 数据绑定
         randomResult.bind(to: tableView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
     }
